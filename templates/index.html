@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}Index{% endblock %}
+
+{% block content %}
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">INVENTORY MANAGEMENT SYSTEM</h1>
+            <p class="lead"></p>
+        </div>
+    </div>
+    <div class="container" align="left">
+        <embed type="image/svg+xml" src={{ pie_type|safe }} style='max-width:500px'/>
+    </div>
+{% endblock %}

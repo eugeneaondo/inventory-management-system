@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %}sales{% endblock title %}
+{% block content %}
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="row">ID</th>
+            <th scope="col">Quantity</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for sale in sales %}
+            <tr>
+                <td>{{ sale.id }}</td>
+                <td>{{ sale.qyt }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
